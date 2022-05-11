@@ -52,7 +52,7 @@ fetch('modelData.xml').then((response) => {
             td.innerText = bookXmlNode.children[3].innerHTML;
             row.appendChild(td);
 
-            // document.getElementById('displayCoord').innerHTML = 
+            // document.getElementById('displayCoord').innerHTML =  row ;
 
         });
     });
