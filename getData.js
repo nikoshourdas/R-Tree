@@ -6,7 +6,7 @@ function getData(){
             cloneXML(this);
         }
     };
-    xhttp.open("GET", "books.xml", true);
+    xhttp.open("GET", "telegraph.x3d", true);
     xhttp.send();
 
 } 
