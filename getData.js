@@ -6,7 +6,7 @@ function getData(){
             cloneXML(this);
         }
     };
-    xhttp.open("GET", "telegraph.x3d", true);
+    xhttp.open("GET", "modelData.xml", true);
     xhttp.send();
 
 } 

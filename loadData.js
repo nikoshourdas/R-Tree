@@ -17,7 +17,7 @@ function readXML(xml){
     var x , i ,xmlDoc , txt ;
     xmlDoc = xml.responseXML;
     txt = "";
-    x = xmlDoc.getElementsByTagName("coordinates");
+    x = xmlDoc.getElementsByTagName("note");
     for(i = 0 ; i < x.lenght ; i++){
         txt += x[i].childNodes[o].nodeValue + "<br>";
 
