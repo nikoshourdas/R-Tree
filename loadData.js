@@ -26,34 +26,38 @@
 // }
 
 //https://www.youtube.com/watch?v=VxKGVb0oOBw
-let xmlContent = '';
-fetch('modelData.xml').then((response) => {
-    response.text().then((xml)=>{
-        let parser = new DOMParser();
-        let xmlDOM = parser.parseFromString(xmlContent,'application/xml');
-        let books = xmlDOM.querySelectorAll('note');
+// let xmlContent = '';
+// fetch('modelData.xml').then((response) => {
+//     response.text().then((xml)=>{
+//         let parser = new DOMParser();
+//         let xmlDOM = parser.parseFromString(xmlContent,'application/xml');
+//         let books = xmlDOM.querySelectorAll('note');
 
-        books.forEach(noteXmlNode =>{
-            let row = document.createElement('tr');
+//         books.forEach(noteXmlNode =>{
+//             let row = document.createElement('tr');
 
-            td = document.createElement('td');
-            td.innerText = bookXmlNode.children[0].innerHTML;
-            row.appendChild(td);
+//             td = document.createElement('td');
+//             td.innerText = bookXmlNode.children[0].innerHTML;
+//             row.appendChild(td);
             
-            td = document.createElement('td');
-            td.innerText = bookXmlNode.children[1].innerHTML;
-            row.appendChild(td);
+//             td = document.createElement('td');
+//             td.innerText = bookXmlNode.children[1].innerHTML;
+//             row.appendChild(td);
 
-            td = document.createElement('td');
-            td.innerText = bookXmlNode.children[2].innerHTML;
-            row.appendChild(td);
+//             td = document.createElement('td');
+//             td.innerText = bookXmlNode.children[2].innerHTML;
+//             row.appendChild(td);
 
-            td = document.createElement('td');
-            td.innerText = bookXmlNode.children[3].innerHTML;
-            row.appendChild(td);
+//             td = document.createElement('td');
+//             td.innerText = bookXmlNode.children[3].innerHTML;
+//             row.appendChild(td);
 
-            // document.getElementById('displayCoord').innerHTML =  row ;
+//             // document.getElementById('displayCoord').innerHTML =  row ;
 
-        });
-    });
-});
+//         });
+//     });
+// });
+
+
+// https://www.youtube.com/watch?v=MDAWie2Sicc
+
