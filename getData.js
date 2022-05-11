@@ -1,46 +1,28 @@
 function getData(){
-    
-    loadXMLDoc();
-    
-//     console.log("test");
-//     var xhttp = new XMLHttpRequest();
-//     xhttp.onreadystatechange = function() {
-//         if (this.readyState == 4 && this.status == 200) {
-//         myFunction(this);
-//         }
-//     };
-//     xhttp.open("GET", "modelData.xml", true);
-//     xhttp.send();
-
-//     function myFunction(xml) {
-//     var xmlDoc = xml.responseXML;
-//     document.getElementById("demo").innerHTML =
-//     xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
-// }
-
-
+  
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            cloneXML(this);
+        }
+    };
+    xhttp.open("GET", "books.xml", true);
+    xhttp.send();
 
 } 
 
-function loadXMLDoc(){
-    var xmlhttp = new XMLHttpRequest();
-    xmlhttp.onreadystatechange = function() {
-        if(this.readyState == 4 && this.status == 200){
-            readXML(this);
-        }
-    }
-}
-
-function readXML(xml){
-    var x , i ,xmlDoc , txt ;
+function cloneXML(xml) {
+    var x, y, cloneNode, i, xmlDoc, txt;
     xmlDoc = xml.responseXML;
     txt = "";
-    x = xmlDoc.getElementsByTagName("coordinates");
-    for(i = 0 ; i < x.lenght ; i++){
-        txt += x[i].childNodes[o].nodeValue + "<br>";
+    x = xmlDoc.getElementsByTagName('book')[0];
+    cloneNode = x.cloneNode(true);
+    xmlDoc.documentElement.appendChild(cloneNode);
 
+    // Output all titles
+    y = xmlDoc.getElementsByTagName("title");
+    for (i = 0; i < y.length; i++) { 
+        txt += y[i].childNodes[0].nodeValue + "<br>";
     }
-    document.getElementById("displayCoord").innerHTML = txt ; 
+    document.getElementById("demo").innerHTML = txt; 
 }
-
- //test 1
