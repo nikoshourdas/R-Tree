@@ -15,7 +15,7 @@ function cloneXML(xml) {
     var x, y, cloneNode, i, xmlDoc, txt;
     xmlDoc = xml.responseXML;
     txt = "";
-    x = xmlDoc.getElementsByTagName('book')[0];
+    x = xmlDoc.getElementsByTagName('Transform')[0];
     cloneNode = x.cloneNode(true);
     xmlDoc.documentElement.appendChild(cloneNode);
 
