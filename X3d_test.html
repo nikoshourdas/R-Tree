@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8 " /> 
         <script type="text/javascript" src="getData.js"></script>
+        <script type="text/javascript" src="loadData.js"></script>
 
         <title>Morse Telegraph test</title>
         <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/create3000/x_ite/4.0.7/dist/xite.css" />
@@ -76,15 +77,31 @@
               to {opacity:1 ;}
             }
         </style>
+
+        <!-- try 3  -->
+        <style>
+          table,th,td {
+            border : 1px solid black;
+            border-collapse: collapse;
+          }
+          th,td {
+            padding: 5px;
+          }
+        </style>
         
     </head>
     <body>
         <X3DCanvas src="telegraph.x3d" timings = 'false'>
             <p>your browser does not support all the features of x_ite</p>
         </X3DCanvas>
-        <button onclick="getData()" >Get Data</button>
-        <button onclick="loadData.js" >Load Data</button>
-        <p id = "displayCoord"></p>
+
+        <!-- <button onclick="getData()" >Get Data</button>
+        <button onclick="loadData()" >Load Data</button> -->
+
+        <!-- //try 3 w3 -->
+        <button type="button" onclick="loadXMLDoc()">Get my CD</button>
+        <br><br>
+        <table id="demo"></table>
     </body>
-    
+   
 </html> 

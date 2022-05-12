@@ -1,4 +1,7 @@
-// function loadData(){
+//try 1 
+
+ function loadData(){
+        console.log("load Data test");
     
 //     loadXMLDoc();
     
@@ -23,9 +26,11 @@
 
 //     }
 //     document.getElementById("displayCoord").innerHTML = txt ; 
-// }
+}
 
+//try 2 
 //https://www.youtube.com/watch?v=VxKGVb0oOBw
+
 // let xmlContent = '';
 // fetch('modelData.xml').then((response) => {
 //     response.text().then((xml)=>{
@@ -58,6 +63,4 @@
 //     });
 // });
 
-
-// https://www.youtube.com/watch?v=MDAWie2Sicc
 
